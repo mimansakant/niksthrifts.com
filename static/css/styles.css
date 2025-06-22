@@ -1,0 +1,494 @@
+/* ─── VARIABLES ───────────────────────────────────────────────────────── */
+:root {
+    --blue: #C9E3FF;        /* navbar */
+    --dark: #222;
+    --light: #ffffff;
+    --accent: #000;
+    --max-width: 1080px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ─── GLOBAL RESETS ───────────────────────────────────────────────────── */
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--light);color:var(--dark);line-height:1.6}
+
+/* General Typography */
+body {
+    font-family: 'Poppins', sans-serif; /* Ensure consistent font across the page */
+    font-size: 1rem; /* Default font size for body text */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Default text color */
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem; /* Large font size for main headings */
+    font-weight: 600; /* Bold font for emphasis */
+    text-align: center; /* Center align the main heading */
+    margin-bottom: 1.5rem; /* Add spacing below the heading */
+}
+
+h2 {
+    font-size: 2rem; /* Slightly smaller than h1 */
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem; /* Standard font size for body text */
+    margin-bottom: 1rem; /* Add spacing between paragraphs */
+    text-align: justify; /* Justify text for a clean look */
+}
+
+/* Lead Paragraph */
+.lead {
+    font-size: 1rem; /* Slightly larger font size for lead text */
+    font-weight: 400; /* Normal weight for readability */
+    line-height: 1.3; /* Increase line height for better spacing */
+}
+
+/* Links */
+a {
+    color: #1e90ff; /* Light blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #2c3e50;
+  padding-top: 20px; /* Add padding above the page titles */
+}
+
+h1 small {
+  font-size: 0.6em;
+  color: #7f8c8d;
+}
+
+/* ─── NAVBAR ──────────────────────────────────────────────────────────── */
+nav{background:var(--blue);padding:.75rem 1rem;position:sticky;top:0;z-index:100}
+.nav-container{max-width:var(--max-width);margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+nav img{height:42px}
+nav ul{display:flex;gap:2rem;list-style:none;font-weight:600;letter-spacing:2px}
+nav a{color:var(--dark);text-decoration:none}
+nav a.active, nav a:hover{color:var(--accent)}
+
+/* ─── HERO / HOME ─────────────────────────────────────────────────────── */
+.hero img{width:100%;max-height:350px;object-fit:cover}
+.intro{max-width:var(--max-width);margin:2rem auto;padding:0 1rem;text-align:center}
+
+/* ─── full-bleed hero ─────────────────────────────────────────────── */
+.hero--fullwidth{
+    width:100vw;                          /* span entire viewport width        */
+    margin-left:calc(-50vw + 50%);        /* cancel the parent’s centering     */
+}
+.hero--fullwidth img{
+    width:100%;
+    height:auto;          /* or object-fit:cover + fixed height if you prefer */
+    display:block;        /* strip the default inline gap                     */
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    align-items: center; /* Align text and images vertically */
+    gap: 2rem; /* Add spacing between text and images */
+    margin-bottom: 2rem; /* Add spacing between sections */
+    border: none; /* Remove any borders */
+    background: none; /* Remove any background colors */
+    padding: 0; /* Remove padding */
+    box-shadow: none; /* Remove any shadows */
+}
+
+.content-section img {
+    width: 40%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove any shadows */
+}
+
+.content-section .text-left,
+.content-section .text-right {
+    flex: 1; /* Allow text to take up remaining space */
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove padding */
+    text-align: justify; /* Justify text alignment */
+}
+
+/* Paragraph Styles */
+.content-section .text-left p,
+.content-section .text-right p,
+.additional-images p {
+  font-size: 0.9rem; /* Smaller font size */
+  font-weight: normal; /* Remove bold styling */
+  line-height: 1.5; /* Improve readability */
+  color: #555; /* Slightly lighter text color for better contrast */
+}
+
+/* Alternate Image and Text Alignment */
+.image-left {
+  order: 1;
+}
+
+.text-right {
+  order: 2;
+}
+
+.image-right {
+  order: 2;
+}
+
+.text-left {
+  order: 1;
+}
+
+/* Additional Images Section */
+.additional-images {
+    display: flex;
+    justify-content: center; /* Center the images */
+    gap: 1rem; /* Add spacing between images */
+    margin-bottom: 2rem; /* Add spacing below the section */
+}
+
+.additional-images h2 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.additional-images img {
+    width: 80%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove any shadows */
+}
+
+.additional-images img:hover {
+  transform: scale(1.05); /* Keep the hover effect */
+}
+
+/* Smaller Images Section */
+.additional-images.smaller-images img {
+    width: 15%; /* Adjust image width for smaller images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove any shadows */
+}
+
+.additional-images.smaller-images img:hover {
+  transform: scale(1.05); /* Keep the hover effect */
+}
+
+/* ─── GENERIC PAGE STYLES ─────────────────────────────────────────────── */
+main{max-width:var(--max-width);margin:2rem auto;padding:0 1rem}
+h1{font-size:2.5rem;margin-bottom:1rem}
+h1 small{font-size:1.5rem;color:gray;font-weight:300}
+.full-width-img{width:100%;margin:1rem 0}
+
+/* EVENTS */
+.event{display:flex;gap:2rem;margin-top:2rem;align-items:center}
+.event img{flex-shrink:0;width:300px;height:auto;border-radius:8px;box-shadow:0 4px 6px rgba(0,0,0,0.1)}
+.event-text{max-width:500px}
+.event-text p{font-size:1rem;line-height:1.6;color:#333}
+.upcoming-events, .past-events{margin:2rem auto;max-width:800px;text-align:justify}
+.mt3{margin-top:3rem}
+
+/* MAP PAGE */
+.map-wrapper{display:flex;gap:2rem;min-height: 600px;flex-wrap:wrap}
+.filters{min-width:220px;background:white;padding:1rem;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,.08)}
+#map{flex:1 1 500px;border:1px solid #ddd;border-radius:8px}
+
+/* Footer */
+footer {
+    background: #000; /* Black background */
+    color: white; /* White text */
+    padding: 1.5rem 1rem; /* Reduce padding to make the footer more compact */
+    margin-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* Align logo and contact info vertically */
+    justify-content: space-between; /* Space out logo and contact info */
+    gap: 1rem; /* Reduce gap between logo and contact info */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-logo img {
+    height: 80px; /* Reduce logo size for better balance */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: row; /* Arrange columns side by side */
+    gap: 1.5rem; /* Reduce spacing between columns */
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem; /* Reduce spacing between items in each column */
+}
+
+.footer-contact p {
+    margin: 0;
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: white; /* Ensure text is white for contrast */
+}
+
+.footer-contact a {
+    color: #1e90ff; /* Light blue for links */
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design: Stack logo and contact info vertically on smaller screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-contact {
+        flex-direction: column; /* Stack columns vertically */
+        gap: 1rem; /* Add spacing between stacked columns */
+    }
+
+    .footer-logo {
+        margin-bottom: 1rem; /* Add spacing below the logo */
+    }
+}
+
+/* --- About page tweaks --- */
+.about-hero        { gap: 2rem; flex-wrap: wrap; }
+.about-hero img    { max-width: 420px; }
+.about-gallery img { object-fit: cover; height: 70%; }
+
+/* Gallery Images */
+.about-gallery-row img {
+    height: 200px; /* Adjust image height */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 0.5rem; /* Add rounded corners */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08); /* Add subtle shadow */
+}
+
+/* Gallery Row Styling */
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.side-img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.center-img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+/* Make the middle image larger */
+.about-gallery-row img:nth-child(3) {
+    height: 250px; /* Increase height for the middle image */
+    transform: scale(1.1); /* Slightly enlarge the middle image */
+}
+
+/* Adjust image size for smaller screens */
+@media (max-width: 576px) {
+    .about-gallery-row img {
+        height: 150px; /* Reduce image height for smaller screens */
+    }
+
+    .about-gallery-row img:nth-child(3) {
+        height: 200px; /* Adjust the middle image size for smaller screens */
+    }
+}
+.about-image-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.about-image-row img {
+  width: 40%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.about-image-row p {
+  width: 60%;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-image-row.reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .about-image-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image-row.reverse {
+    flex-direction: column;
+  }
+
+  .about-image-row img,
+  .about-image-row p {
+    width: 100%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-section {
+    flex-direction: column; /* Stack text and images vertically */
+    text-align: center; /* Center-align text */
+  }
+
+  .content-section img {
+    width: 80%; /* Make images larger on smaller screens */
+  }
+
+  .additional-images img,
+  .smaller-images img {
+    width: 40%; /* Adjust image width for smaller screens */
+  }
+
+  h1 {
+      font-size: 2rem; /* Reduce heading size for smaller screens */
+  }
+
+  p {
+      font-size: 0.9rem; /* Slightly smaller font size for body text */
+  }
+
+  .about-gallery-row img {
+      height: 200px; /* Reduce image height for smaller screens */
+  }
+}
+
+/* Memory Lane Page Styling */
+.memory-lane-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.top-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.top-row img {
+    height: 150px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.middle-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.middle-section {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.image-column img {
+    height: 150px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-column {
+    flex: 2;
+    text-align: justify;
+}
+
+.text-column p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .middle-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-column {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-column img {
+        height: 120px;
+    }
+
+    .text-column {
+        text-align: center;
+    }
+}
+
+/* Styling for Source Text */
+.source-text {
+    font-size: 0.5rem; /* Make the text very small */
+    color: #666; /* Use a lighter color for less emphasis */
+    line-height: 1.2; /* Reduce line spacing */
+    text-align: justify; /* Keep the text justified */
+    margin-top: 7rem; /* Add spacing above the sources */
+}

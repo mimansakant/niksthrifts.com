@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block title %}NYC Thrifting Map{% endblock %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  #map {
+    height: 600px;
+    width: 100%;
+  }
+
+  .map-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .filters {
+    width: 300px;
+    padding: 1em;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .filters h3 {
+    margin-bottom: 1rem;
+  }
+
+  .filters label {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .filters select {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1 style="text-align: center;">NYC Thrift Map</h1>
+
+<div class="map-wrapper">
+  <!-- Filters -->
+  <aside class="filters">
+    <h3>Filter Stores</h3>
+
+    <!-- Style -->
+    <label>Style:
+      <select id="styleFilter">
+        <option value="">All</option>
+        <option value="F">Feminine</option>
+        <option value="M">Masculine</option>
+        <option value="N">Neutral</option>
+      </select>
+    </label>
+
+    <!-- Price -->
+    <label>Price Range:
+      <select id="priceFilter">
+        <option value="">All</option>
+        <option value="$">$</option>
+        <option value="$$">$$</option>
+        <option value="$$$">$$$</option>
+        <option value="$$$$">$$$$</option>
+      </select>
+    </label>
+
+    <!-- Gender
+    <label>Gender Specific?
+      <select id="genderFilter">
+        <option value="">All</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </label> -->
+
+    <!-- Category -->
+    <label>Category:
+      <select id="categoryFilter">
+        <option value="">All</option>
+        <option value="clothing and accessories">Clothing & Accessories</option>
+        <option value="books">Books</option>
+        <option value="furniture">Furniture</option>
+      </select>
+    </label>
+
+    <!-- Neighborhood -->
+    <label>Neighborhood:
+      <select id="neighborhoodFilter">
+        <option value="">All</option>
+        <option value="UES">UES</option>
+        <option value="Bushwick">Bushwick</option>
+        <option value="East Village">East Village</option>
+        <!-- Add more neighborhoods from your data as needed -->
+      </select>
+    </label>
+  </aside>
+
+  <!-- Map -->
+  <div id="map"></div>
+</div>
+
+
+  <!-- Map -->
+  <div id="map"></div>
+</div>
+{% endblock %}
+
+{% block body_extra %}
+<script src="{{ url_for('static', filename='js/thriftStores.js') }}"></script>
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+{% endblock %}
+

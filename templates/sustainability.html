@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Sustainability{% endblock %}
+
+{% block content %}
+<h1>Sustainability Impact<br><br></h1>
+
+<!-- Section 1: Image on the left, text on the right -->
+<div class="content-section">
+  <img class="image-left" src="{{ url_for('static', filename='images/sustain1.jpg') }}" alt="Sustainability Image 1">
+  <div class="text-right">
+    <p>The fashion industry contributes to climate change at every stage, from production to the end of a garment’s life cycle. Carbon emissions are generated throughout the process—from growing raw materials like cotton to manufacturing, distribution, and disposal—all of which consume large amounts of energy. Growing conventional cotton has a large environmental burden as well; according to WWF, a single cotton T-shirt requires around 6,000 pounds of water to manufacture—nearly two and a half years’ worth of drinking water (García, 2025). Synthetic materials like polyester significantly contribute to carbon pollution due to their high energy consumption, non-biodegradable nature, and microplastics that shed into the environment.    </p>
+  </div>
+</div>
+
+<!-- Additional Images Section -->
+<div class="additional-images">
+  <img src="{{ url_for('static', filename='images/sustain4.png') }}" alt="Additional Image 1">
+</div>
+
+<!-- Section 2: Image on the right, text on the left -->
+<div class="content-section">
+  <div class="text-left">
+    <p>Thrifting extends the life of clothes, decreasing the need for new production. This reduces carbon emissions, water usage, and the pollution caused by textile manufacturing. In the United States, 12.46 million tons of textiles are thrown into landfills each year, accounting for 7.7% of all landfill waste (Igini, 2024). By thrifting and participating in a circular economy, individuals help reduce waste, lower demand for resource-intensive production, and extend the life cycle of clothing.    </p>
+  </div>
+  <img class="image-right" src="{{ url_for('static', filename='images/sustain2.jpg') }}" alt="Sustainability Image 2">
+</div>
+
+<!-- Additional Images Section -->
+<div class="additional-images">
+  <img src="{{ url_for('static', filename='images/sustain5.png') }}" alt="Additional Image 2">
+</div>
+
+
+
+<!-- Section 3: Image on the left, text on the right -->
+<div class="content-section">
+  <img class="image-left" src="{{ url_for('static', filename='images/sustain3.png') }}" alt="Sustainability Image 3">
+  <div class="text-right">
+    <p>The constant cycle of trends has fundamentally altered the way consumers think about fashion. According to the Harvard Business Review, fashion trends used to last for decades, whereas now, influencer culture and constant consumption have shortened trends to just a few weeks (Khan, 2023). In a world where trends come and go at such a rapid pace, it is becoming more difficult for people to explore their own sense of style—and easier to give in to impulse purchases. Fast fashion brands chase quantity over quality. Thrifting allows you to discover your personal style, avoid the pressure of constantly shifting microtrends, and shop more sustainably.    </p>
+  </div>
+</div>
+
+
+<!-- New Images Section -->
+<div class="additional-images smaller-images">
+  <img src="{{ url_for('static', filename='images/sustain7.png') }}" alt="Additional Image 3">
+  <img src="{{ url_for('static', filename='images/sustain8.png') }}" alt="Additional Image 4">
+</div>
+
+
+<!-- Text and Image Section -->
+<div class="content-section">
+  <div class="text-left">
+    <p>While 55% of consumers express interest in buying sustainable clothing, 48% are unsure where or how to find it, and 42% remain confused about what truly qualifies clothing as sustainable (Genomatica, 2022). Nik’s Thrifts serves as a space to educate and inspire others to shop sustainably by helping to navigate NYC thrifting and raising awareness about the environmental impact of the fashion industry.</p>
+  </div>
+  <img class="image-left" src="{{ url_for('static', filename='images/sustain6.png') }}" alt="Additional Image 5">
+</div>
+
+<p class="source-text">
+  Farhoud, Nada. “African Beach Where Mountain of Used Clothes Exposes Cost of Fast Fashion.” Daily Record, Daily Record, 29 July 2024, www.dailyrecord.co.uk/news/uk-world-news/african-beach-mountain-used-clothes-33348947. García, Maya. “The Hidden Cost of a Cotton T-Shirt.” Globalsociety.Earth, globalsociety.earth, 14 Apr. 2025, www.globalsociety.earth/post/the-hidden-cost-of-a-cotton-t-shirt#:~:text=The%20World%20Wildlife%20Fund%20(WWF,two%20and%20a%20half%20years. “The Truth about the World’s Fastest Fashion Brand: Its Clothes Start at Just £1 and yet It’s Worth Billions. Steve Boggan Investigates How Online Outlet Shein Became so Ubiquitous – and Who Pays the Real Cost of Its Low Prices.” Daily Mail Online, Associated Newspapers, 19 Feb. 2023, www.dailymail.co.uk/femail/fashion/article-11756233/The-truth-worlds-fastest-fashion-brand.html. “ThredUp Resale Report 2023.” ThredUp, 2023, cf-assets-tup.thredup.com/resale_report/2023/thredUP_2023_Resale_Report_FINAL.pdf. Igini, Martina. “10 Concerning Fast Fashion Waste Statistics.” Earth.Org, Earth.Org, 30 May 2024, earth.org/statistics-about-fast-fashion-waste/. Khan, Nurayn. “The Influencer Revolution: Increased Accessibility & Super Fast Fashion.” Harvard Political Review, 27 Aug. 2023, harvardpolitics.com/the-influencer-revolution/?utm. “Survey: Consumers Want Sustainable Clothing.” Geno, 9 May 2022, www.genomatica.com/news-content/survey-consumers-want-sustainable-clothing/. “ThredUp Resale Report 2023.” ThredUp, 2023, cf-assets-tup.thredup.com/resale_report/2023/thredUP_2023_Resale_Report_FINAL.pdf. Watts, Jessica. “The Ripple Effect of Thrifting on Environmental Sustainability.” Blog.Shopgoodwill.Com, blog.shopgoodwill.com, 17 June 2024, blog.shopgoodwill.com/english/thrifting-and-sustainability. 
+</p>
+{% endblock %}

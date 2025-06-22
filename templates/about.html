@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+
+{% block content %}
+
+<!-- ================  ABOUT  ================= -->
+<style>
+  /* Center and justify text */
+  section.container {
+    text-align: justify; /* Justify text alignment */
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+
+  section.container p {
+    text-align: justify; /* Justify text alignment */
+    margin: 0 auto; /* Center the paragraph block */
+  }
+
+  section.container h1 {
+    text-align: center; /* Center the heading */
+    font-size: 1.2rem; /* Make the quote smaller */
+    font-weight: normal; /* Remove bold styling */
+    line-height: 1.6; /* Adjust line spacing for better readability */
+  }
+
+  /* Gallery Row Styling */
+  .about-gallery-row {
+    display: flex; /* Arrange images in a row */
+    flex-wrap: wrap; /* Allow wrapping to the next row if needed */
+    gap: 1.5rem; /* Add spacing between images */
+    justify-content: center; /* Center the images */
+    margin-bottom: 2rem; /* Add spacing below the gallery */
+  }
+
+  .about-gallery-row img {
+    height: 300px; /* Adjust image height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+  }
+
+  /* Adjust image size for smaller screens */
+  @media (max-width: 576px) {
+    .about-gallery-row img {
+      height: 200px; /* Reduce image height for smaller screens */
+    }
+  }
+</style>
+
+<section class="container py-5">
+  <h1 class="display-6 fw-bold mb-4">
+    There’s nothing better than getting a compliment on your outfit and responding,<br>
+    <em><strong>“Thanks, it’s thrifted!”</strong></em>
+  </h1>
+
+  <!-- First Image Row -->
+  <div class="about-gallery-row">
+    <div class="image-row">
+      <img src="{{ url_for('static', filename='images/nik_grad.jpg') }}" class="side-img" alt="Nikki’s graduation portrait">
+      <img src="{{ url_for('static', filename='images/nik_bench.jpg') }}" class="side-img" alt="Nikki relaxing on the High Line">
+      <img src="{{ url_for('static', filename='images/nik_young.jpg') }}" class="center-img" alt="Young Nikki striking a confident beach pose">
+      <img src="{{ url_for('static', filename='images/nik_office.jpg') }}" class="side-img" alt="Nikki by the NYC skyline window">
+      <img src="{{ url_for('static', filename='images/nik_event.jpg') }}" class="side-img" alt="Nikki enjoying an event evening">
+    </div>
+  </div>
+
+  <p class="about-image-row-text">
+    What’s up! I’m <strong>Nikki</strong>—I live in New York City and I’m utterly obsessed with thrifting. With an (almost) 100 % thrifted closet, second‑hand shopping is not only a hobby of mine but also a sustainable lifestyle choice.
+  </p>
+<!-- Image beside text - left image -->
+<div class="about-image-row">
+  <img src="{{ url_for('static', filename='images/IMG_6920.JPG') }}" alt="Thrifted streetwear outfit – belt & green dunks">
+  <p>For the past 3 years, I’ve worked to create what I like to call The New York City Secondhand Guide—a curated list of thrift, vintage, and secondhand stores across NYC.
+    It provides a deep examination into each store’s vibe, style, price range, location, price range, and more.
+   
+   Whether you're new to thrifting or a seasoned pro, The New York City Secondhand Guide makes the hunt easy and exciting with an <strong>interactive map</strong> that lets you input your personal preferences—helping you discover stores perfectly tailored to your style, budget, location, and more.</p>
+</div>
+
+<!-- Image beside text - right image -->
+<div class="about-image-row reverse">
+  <img src="{{ url_for('static', filename='images/IMG_4289.JPG') }}" alt="Brown puffer vest thrift fit">
+  <p>For years this holy grail list was sitting in my notes app. I loved sharing it  with friends and family but wanted to give it to a larger audience. I created Nik’s Thrifts in January 2025 with the hopes of helping the NYC community navigate all the thrift stores and shop sustainably. 
+
+    From a young age, I’ve had a love for the environment, animals, and sustainability. I graduated from <strong>Lehigh University</strong> in 2024 with a major in Environmental Studies.</p>
+
+</div>
+
+<!-- Image beside text - left image -->
+<div class="about-image-row">
+  <img src="{{ url_for('static', filename='images/IMG_9031.JPG') }}" alt="Thrifted streetwear outfit – belt & green dunks">
+  <p>With the rise of fast fashion, my passion for sustainable fashion arose. I’m currently a graduate student at <strong>Columbia University
+  </strong> pursuing my Master of Science in Sustainability Management. I’m grateful for the opportunity to combine my love for the environment with my entrepreneurial mindset and creativity to drive meaningful change.
+  </p>
+</div>
+
+<!-- Image beside text - right image -->
+<div class="about-image-row reverse">
+  <img src="{{ url_for('static', filename='images/IMG_4339.JPG') }}" alt="Brown puffer vest thrift fit">
+  <p>Thrifting is an adventure every time—you never know what hidden gems you’ll uncover. It’s a fun and exciting way to express yourself while supporting a <strong>sustainable lifestyle
+  </strong>. Every find tells a story, and every purchase keeps clothes out of landfills.
+  </p>
+
+</div>
+<!-- Image beside text - left image -->
+<div class="about-image-row">
+  <img src="{{ url_for('static', filename='images/IMG_9436.JPG') }}" alt="Thrifted streetwear outfit – belt & green dunks">
+  <p>Be sure to follow Nik’s Thrifts on <strong>Instagram and TikTok</strong> to stay in the loop on exciting events like thrift crawls, clothing swaps, and more! Keep an eye out for awesome collaborations too—like with Remake, a global nonprofit advocating for a more sustainable and ethical fashion industry! 
+
+    Nik’s Thrifts is more than just store recommendations— it's about creating community while improving the world around us. I’m always happy to chat or answer any questions you have! niksthriftsnyc@gmail.com</p>
+</div>
+
+</section>
+
+
+
+{% endblock %}
+

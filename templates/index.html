@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="hero--fullwidth">
+    <img src="{{ url_for('static', filename='images/banner.png') }}"
+         alt="Nick's Thrifts banner">
+</div>
+
+<style>
+.hero--fullwidth {
+    margin-bottom: 0; /* Remove any default margin below the banner */
+}
+
+.intro {
+    margin-top: 1rem; /* Reduce the space above the intro text */
+}
+</style>
+
+<section class="intro">
+    <p><strong>Through social media content, community-led events, a one-of-a-kind thrift map, and a curated vintage clothing collection, Nik’s thrifts helps New York shop sustainably by exploring the city’s secondhand stores and fostering a collaborative space around sustainable fashion.</strong></p>
+</section>
+{% endblock %}

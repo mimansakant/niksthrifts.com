@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Events{% endblock %}
+
+{% block content %}
+<h1>Events<br><small>Upcoming</small></h1>
+
+<!-- Upcoming Events Section -->
+<section class="upcoming-events">
+    <p>Stay tuned for the next event...</p>
+</section>
+
+<h1><small>Past</small></h1>
+
+<!-- Past Events Section -->
+<section class="past-events"> 
+    <article class="event">
+        <img src="{{ url_for('static', filename='images/event1.jpeg') }}" alt="East Village Thrift Crawl Flyer">
+        <div class="event-text">
+            <p>
+                <strong>5/04 - East Village Thrift Crawl</strong><br>
+                In collaboration with Remake, a global nonprofit dedicated to sustainable fashion advocacy, the group ventured to Thrift NYC, L Train, Buffalo Exchange, AuH20 Thriftique, and The Re-Shop. We ended the crawl at Book Bar Club, where participants were able to grab a drink and continue socializing. Not only did this event offer a fun exploration for people with different levels of thrifting experience, but it also provided a sense of community and opportunity for conversation around sustainable fashion!
+            </p>
+        </div>
+    </article>
+</section>
+{% endblock %}

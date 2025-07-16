@@ -8,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* ─── GLOBAL RESETS ───────────────────────────────────────────────────── */
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--light);color:var(--dark);line-height:1.6}
@@ -22,10 +23,16 @@ body {
 
 /* Headings */
 h1 {
-    font-size: 2.5rem; /* Large font size for main headings */
-    font-weight: 600; /* Bold font for emphasis */
-    text-align: center; /* Center align the main heading */
-    margin-bottom: 1.5rem; /* Add spacing below the heading */
+    font-size: 3.5rem; /* Increase font size */
+    font-weight: 700; /* Make the font bold */
+    text-align: center; /* Center-align the title */
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem; /* Add spacing below the title */
+    color: #2c3e50; /* Darker color for emphasis */
+    letter-spacing: 2px; /* Add spacing between letters for a modern look */
+    text-transform: uppercase; /* Make the text uppercase for a bold statement */
+    font-family: 'Poppins', sans-serif; /* Ensure a clean, modern font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 }
 
 h2 {
@@ -185,10 +192,12 @@ nav a.active, nav a:hover{color:var(--accent)}
 
 /* Smaller Images Section */
 .additional-images.smaller-images img {
-    width: 15%; /* Adjust image width for smaller images */
+    width: 40%; /* Adjust image width for smaller images */
     height: auto; /* Maintain aspect ratio */
     border-radius: 0; /* Remove rounded corners */
     box-shadow: none; /* Remove any shadows */
+    transform: rotate(-5deg);
+
 }
 
 .additional-images.smaller-images img:hover {
@@ -239,14 +248,14 @@ footer {
 
 .footer-contact {
     display: flex;
-    flex-direction: row; /* Arrange columns side by side */
-    gap: 1.5rem; /* Reduce spacing between columns */
+    flex: 1; /* Take up remaining space */
+    justify-content: space-between; /* Space out the columns */
+    gap: 4rem; /* Increase the gap between columns */
 }
 
 .footer-column {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem; /* Reduce spacing between items in each column */
+    flex: 1; /* Each column takes equal space */
+    padding: 0 1rem; /* Add horizontal padding to each column */
 }
 
 .footer-contact p {
@@ -272,8 +281,23 @@ footer {
     }
 
     .footer-contact {
-        flex-direction: column; /* Stack columns vertically */
-        gap: 1rem; /* Add spacing between stacked columns */
+        flex-direction: column;
+        gap: 1rem; /* Reduce gap for smaller screens */
+    }
+
+    .footer-column {
+        flex: unset; /* Remove equal spacing for stacked layout */
+        padding: 0; /* Remove padding for stacked layout */
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        gap: 1rem; /* Reduce gap for smaller screens */
+    }
+
+    .footer-column {
+        flex: unset; /* Remove equal spacing for stacked layout */
+        padding: 0; /* Remove padding for stacked layout */
     }
 
     .footer-logo {
@@ -389,7 +413,7 @@ footer {
 
   .additional-images img,
   .smaller-images img {
-    width: 40%; /* Adjust image width for smaller screens */
+    width: 60%; /* Adjust image width for smaller screens */
   }
 
   h1 {
@@ -407,16 +431,15 @@ footer {
 
 /* Memory Lane Page Styling */
 .memory-lane-container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0.5rem;
 }
 
 .top-row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; /* Vertically center the images and heading */
+    justify-content: space-between; /* Space out the images and heading */
     margin-bottom: 2rem;
 }
 
@@ -424,12 +447,17 @@ footer {
     height: 150px;
     width: auto;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .middle-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2c3e50;
+    margin: 0 1rem; /* Add spacing between the heading and the images */
 }
 
 .middle-section {
@@ -441,6 +469,7 @@ footer {
 .image-column {
     display: flex;
     flex-direction: column;
+    padding-left: 1.5rem;
     gap: 1rem;
     flex: 1;
 }
@@ -461,6 +490,15 @@ footer {
     margin-bottom: 1rem;
     font-size: 1rem;
     line-height: 1.6;
+}
+
+.text-column a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.text-column a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -484,6 +522,21 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    .top-row {
+        flex-direction: column; /* Stack the images and heading vertically on smaller screens */
+        align-items: center;
+    }
+
+    .top-row img {
+        margin-bottom: 1rem; /* Add spacing between stacked elements */
+    }
+
+    .middle-title {
+        margin: 1rem 0; /* Add spacing above and below the heading */
+    }
+}
+
 /* Styling for Source Text */
 .source-text {
     font-size: 0.5rem; /* Make the text very small */
@@ -491,4 +544,31 @@ footer {
     line-height: 1.2; /* Reduce line spacing */
     text-align: justify; /* Keep the text justified */
     margin-top: 7rem; /* Add spacing above the sources */
+}
+
+.stacked-img {
+    width: 100%;
+
+    border-radius: 8px;
+}
+
+/* Ensure consistent sizing for all images */
+.top-row img,
+.image-column img {
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: none;
+    background: transparent;
+}
+.right-img-offset {
+  margin-left: 2rem; /* Adjust this value until it aligns nicely */
+  margin-top: 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+  height: 300px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: none;
+  background: transparent;
 }

@@ -1,7 +1,7 @@
 const thriftStores = [
   {
     "Store Name": "Thrift NYC",
-    "Address": "305 E 84th st                               ",
+    "Address": "305 E 84th st New York, NY",
     "Price Range": "$$",
     "Neighborhood": "UES",
     "Style": "N",
@@ -13,7 +13,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Thrift NYC",
-    "Address": "30 W 14th st    ",
+    "Address": "30 W 14th st New York, NY",
     "Price Range": "$$",
     "Neighborhood": "Greenwich village",
     "Style": "N",
@@ -25,7 +25,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Thrift NYC",
-    "Address": "150 W 26th st   ",
+    "Address": "150 W 26th st New York, NY",
     "Price Range": "$$",
     "Neighborhood": "Chelsea",
     "Style": "N",
@@ -37,7 +37,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Thrift NYC",
-    "Address": "226 e 14th st ",
+    "Address": "226 e 14th st New York, NY",
     "Price Range": "$$",
     "Neighborhood": "East Village",
     "Style": "N",
@@ -49,7 +49,7 @@ const thriftStores = [
   },
   {
     "Store Name": "L train/ No relations ",
-    "Address": "204 first ave                    ",
+    "Address": "204 first ave New York, NY",
     "Price Range": "$$",
     "Neighborhood": "East village",
     "Style": "M",
@@ -61,7 +61,7 @@ const thriftStores = [
   },
   {
     "Store Name": "L train/ No relations ",
-    "Address": "629 grand st                     ",
+    "Address": "629 grand st New York, NY",
     "Price Range": "$$",
     "Neighborhood": " Williamsburg",
     "Style": "M",
@@ -73,7 +73,7 @@ const thriftStores = [
   },
   {
     "Store Name": "L train/ No relations ",
-    "Address": "654 sackett st                  ",
+    "Address": "654 sackett st New York, NY",
     "Price Range": "$$",
     "Neighborhood": "Gowanus",
     "Style": "M",
@@ -85,7 +85,7 @@ const thriftStores = [
   },
   {
     "Store Name": "L train/ No relations ",
-    "Address": " 616 classon ave               ",
+    "Address": "616 classon ave New York, NY",
     "Price Range": "$$",
     "Neighborhood": "Prospect Heights, ",
     "Style": "M",
@@ -97,7 +97,7 @@ const thriftStores = [
   },
   {
     "Store Name": "L train/ No relations ",
-    "Address": "1325 broadway               ",
+    "Address": "1325 broadway New York, NY",
     "Price Range": "$$",
     "Neighborhood": " Bushwick",
     "Style": "M",
@@ -109,7 +109,7 @@ const thriftStores = [
   },
   {
     "Store Name": "L train/ No relations ",
-    "Address": "1377 DeKalb ave                  ",
+    "Address": "1377 DeKalb ave New York, NY",
     "Price Range": "$$",
     "Neighborhood": " Bushwick",
     "Style": "M",
@@ -121,7 +121,7 @@ const thriftStores = [
   },
   {
     "Store Name": "L train/ No relations ",
-    "Address": "118 Knickerbocker ave                     ",
+    "Address": "118 Knickerbocker ave New York, NY",
     "Price Range": "$$",
     "Neighborhood": " Bushwick",
     "Style": "M",
@@ -133,7 +133,7 @@ const thriftStores = [
   },
   {
     "Store Name": "L train/ No relations ",
-    "Address": "1st st nicholas ave ",
+    "Address": "1st st nicholas ave New York, NY",
     "Price Range": "$$",
     "Neighborhood": " Bushwick",
     "Style": "M",
@@ -145,7 +145,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Buffalo Exchange ",
-    "Address": "114 W 26th st                                                            ",
+    "Address": "114 W 26th st New York, NY",
     "Price Range": "$,$$",
     "Neighborhood": "Chelsea",
     "Style": "N",
@@ -157,7 +157,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Buffalo Exchange ",
-    "Address": "714 Broadway ",
+    "Address": "714 Broadway New York, NY",
     "Price Range": "$,$$",
     "Neighborhood": "No Ho ",
     "Style": "N",
@@ -169,7 +169,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Buffalo Exchange ",
-    "Address": "332 E 11th st  ",
+    "Address": "332 E 11th st New York, NY",
     "Price Range": "$,$$",
     "Neighborhood": "East Village",
     "Style": "N",
@@ -181,7 +181,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Buffalo Exchange ",
-    "Address": "109 Boerum Pl    ",
+    "Address": "109 Boerum Pl New York, NY",
     "Price Range": "$,$$",
     "Neighborhood": " Boerum Hill",
     "Style": "N",
@@ -193,7 +193,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Buffalo Exchange ",
-    "Address": "504 Driggs Ave",
+    "Address": "504 Driggs Ave New York, NY",
     "Price Range": "$,$$",
     "Neighborhood": "Williamsberg, ",
     "Style": "N",
@@ -205,7 +205,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Beacons closet",
-    "Address": "10 W 13th st                         ",
+    "Address": "10 W 13th st New York, NY",
     "Price Range": "$,$$",
     "Neighborhood": "Greenwich village",
     "Style": "N",
@@ -217,7 +217,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Beacons closet",
-    "Address": "74 Guernsey st                      ",
+    "Address": "74 Guernsey st New York, NY",
     "Price Range": "$,$$",
     "Neighborhood": " greenpoint ",
     "Style": "N",
@@ -229,7 +229,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Beacons closet",
-    "Address": " 92 fifth ave                             ",
+    "Address": "92 fifth ave New York, NY",
     "Price Range": "$,$$",
     "Neighborhood": " Park Slope",
     "Style": "N",
@@ -241,7 +241,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Beacons closet",
-    "Address": " 23 bogart st ",
+    "Address": "23 bogart st New York, NY",
     "Price Range": "$,$$",
     "Neighborhood": "williamberg ",
     "Style": "N",
@@ -253,7 +253,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Crossroads ",
-    "Address": "122 2nd ave                         ",
+    "Address": "122 2nd ave New York, NY",
     "Price Range": "$",
     "Neighborhood": "east village",
     "Style": "N",
@@ -265,7 +265,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Crossroads ",
-    "Address": "47 W 13th st     ",
+    "Address": "47 W 13th st New York, NY",
     "Price Range": "$",
     "Neighborhood": "greenwich village ",
     "Style": "N",
@@ -277,7 +277,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Crossroads ",
-    "Address": "24 W 26th st    ",
+    "Address": "24 W 26th st New York, NY",
     "Price Range": "$",
     "Neighborhood": "Flatiron",
     "Style": "N",
@@ -289,7 +289,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Crossroads ",
-    "Address": "135 N seventh st ",
+    "Address": "135 N seventh st New York, NY",
     "Price Range": "$",
     "Neighborhood": " Williamsburg",
     "Style": "N",
@@ -301,7 +301,7 @@ const thriftStores = [
   },
   {
     "Store Name": "2nd Street ",
-    "Address": "180 Orchard st                                        ",
+    "Address": "180 Orchard st New York, NY",
     "Price Range": "$-$$$$",
     "Neighborhood": " LES",
     "Style": "N",
@@ -313,7 +313,7 @@ const thriftStores = [
   },
   {
     "Store Name": "2nd Street ",
-    "Address": "110 University pl        ",
+    "Address": "110 University pl New York, NY",
     "Price Range": "$-$$$$",
     "Neighborhood": "Greenwhich village, ",
     "Style": "N",
@@ -325,7 +325,7 @@ const thriftStores = [
   },
   {
     "Store Name": "2nd Street ",
-    "Address": "70 Front st    ",
+    "Address": "70 Front st New York, NY",
     "Price Range": "$-$$$$",
     "Neighborhood": "dumbo",
     "Style": "N",
@@ -337,7 +337,7 @@ const thriftStores = [
   },
   {
     "Store Name": "2nd Street ",
-    "Address": "142 W 26th st  ",
+    "Address": "142 W 26th st New York, NY",
     "Price Range": "$-$$$$",
     "Neighborhood": "Chelsea",
     "Style": "N",
@@ -349,7 +349,7 @@ const thriftStores = [
   },
   {
     "Store Name": "2nd Street ",
-    "Address": "27 Howard st      ",
+    "Address": "27 Howard st New York, NY",
     "Price Range": "$-$$$$",
     "Neighborhood": "SoHo",
     "Style": "N",
@@ -361,7 +361,7 @@ const thriftStores = [
   },
   {
     "Store Name": "2nd Street ",
-    "Address": "1282 Third ave     ",
+    "Address": "1282 Third ave New York, NY",
     "Price Range": "$-$$$$",
     "Neighborhood": "UES",
     "Style": "N",
@@ -373,7 +373,7 @@ const thriftStores = [
   },
   {
     "Store Name": "2nd Street ",
-    "Address": "712 Broadway      ",
+    "Address": "712 Broadway New York, NY",
     "Price Range": "$-$$$$",
     "Neighborhood": " NoHo",
     "Style": "N",
@@ -385,7 +385,7 @@ const thriftStores = [
   },
   {
     "Store Name": "What Comes Around Goes Around ",
-    "Address": "103 Wooster st      ",
+    "Address": "103 Wooster st New York, NY",
     "Price Range": "$$$$",
     "Neighborhood": "SoHo",
     "Style": "F",
@@ -397,7 +397,7 @@ const thriftStores = [
   },
   {
     "Store Name": "What Comes Around Goes Around ",
-    "Address": "351 W Broadway ",
+    "Address": "351 W Broadway New York, NY",
     "Price Range": "$$$$",
     "Neighborhood": "SoHo",
     "Style": "F",
@@ -409,7 +409,7 @@ const thriftStores = [
   },
   {
     "Store Name": "The Vintage Twin ",
-    "Address": "597 broadway      ",
+    "Address": "597 broadway New York, NY",
     "Price Range": "$$",
     "Neighborhood": "Nolita",
     "Style": "N",
@@ -421,7 +421,7 @@ const thriftStores = [
   },
   {
     "Store Name": "The Vintage Twin ",
-    "Address": "69 orchard st",
+    "Address": "69 orchard st New York, NY",
     "Price Range": "$$",
     "Neighborhood": "LES",
     "Style": "N",
@@ -433,7 +433,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Domsey Express ",
-    "Address": "1379 Myrtle ave     ",
+    "Address": "1379 Myrtle ave New York, NY",
     "Price Range": "$",
     "Neighborhood": "Bushwick",
     "Style": "M",
@@ -445,7 +445,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Domsey Express ",
-    "Address": "431 Broadway ",
+    "Address": "431 Broadway New York, NY",
     "Price Range": "$",
     "Neighborhood": " Williamsburg",
     "Style": "M",
@@ -457,7 +457,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Other People's clothes ",
-    "Address": "885 Woodward ave",
+    "Address": "885 Woodward ave New York, NY",
     "Price Range": "$$",
     "Neighborhood": "Queens",
     "Style": "N",
@@ -469,7 +469,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Other People's clothes ",
-    "Address": "150 Marcy Ave      ",
+    "Address": "150 Marcy Ave New York, NY",
     "Price Range": "$$",
     "Neighborhood": "Williamsberg",
     "Style": "N",
@@ -481,7 +481,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Other People's clothes ",
-    "Address": "333 Troutman st ",
+    "Address": "333 Troutman st New York, NY",
     "Price Range": "$$",
     "Neighborhood": " Bushwick ",
     "Style": "N",
@@ -493,7 +493,7 @@ const thriftStores = [
   },
   {
     "Store Name": "The Re Shop",
-    "Address": "441 broadway ",
+    "Address": "441 broadway New York, NY",
     "Price Range": "$$",
     "Neighborhood": "Soho",
     "Style": "N",
@@ -505,7 +505,7 @@ const thriftStores = [
   },
   {
     "Store Name": "The Re Shop",
-    "Address": "12 e 14th st  ",
+    "Address": "12 e 14th st New York, NY",
     "Price Range": "$$",
     "Neighborhood": "Union square ",
     "Style": "N",
@@ -517,7 +517,7 @@ const thriftStores = [
   },
   {
     "Store Name": "The Re Shop",
-    "Address": "180 Orchard st ",
+    "Address": "180 Orchard st New York, NY",
     "Price Range": "$$",
     "Neighborhood": "LES",
     "Style": "N",
@@ -529,7 +529,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Niche Shop ",
-    "Address": "311 E 81st             ",
+    "Address": "311 E 81st New York, NY",
     "Price Range": "$$",
     "Neighborhood": "UES",
     "Style": "F",
@@ -541,7 +541,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Niche Shop ",
-    "Address": "2206 Broadway ",
+    "Address": "2206 Broadway New York, NY",
     "Price Range": "$$",
     "Neighborhood": "UWS",
     "Style": "F",
@@ -553,7 +553,7 @@ const thriftStores = [
   },
   {
     "Store Name": "LePoint Value ",
-    "Address": "1321 Rogers ave                   ",
+    "Address": "1321 Rogers ave New York, NY",
     "Price Range": "$",
     "Neighborhood": " fliatbush",
     "Style": "N",
@@ -565,7 +565,7 @@ const thriftStores = [
   },
   {
     "Store Name": "LePoint Value ",
-    "Address": "321 Clarkson ave    ",
+    "Address": "321 Clarkson ave New York, NY",
     "Price Range": "$",
     "Neighborhood": "east flatbush ",
     "Style": "N",
@@ -577,7 +577,7 @@ const thriftStores = [
   },
   {
     "Store Name": "LePoint Value ",
-    "Address": "2235 Pitkin ave     ",
+    "Address": "2235 Pitkin ave New York, NY",
     "Price Range": "$",
     "Neighborhood": "cypress hills ",
     "Style": "N",
@@ -589,7 +589,7 @@ const thriftStores = [
   },
   {
     "Store Name": "LePoint Value ",
-    "Address": "367 Linden st   ",
+    "Address": "367 Linden st New York, NY",
     "Price Range": "$",
     "Neighborhood": "bushwick ",
     "Style": "N",
@@ -601,7 +601,7 @@ const thriftStores = [
   },
   {
     "Store Name": "LePoint Value ",
-    "Address": "1081 flushing ave    ",
+    "Address": "1081 flushing ave New York, NY",
     "Price Range": "$",
     "Neighborhood": "bushwick ",
     "Style": "N",
@@ -613,7 +613,7 @@ const thriftStores = [
   },
   {
     "Store Name": "LePoint Value ",
-    "Address": "1289 Louis Nine Blvd  ",
+    "Address": "1289 Louis Nine Blvd New York, NY",
     "Price Range": "$",
     "Neighborhood": "bronx ",
     "Style": "N",
@@ -625,7 +625,7 @@ const thriftStores = [
   },
   {
     "Store Name": "LePoint Value ",
-    "Address": "1934 Jerome Ave  ",
+    "Address": "1934 Jerome Ave New York, NY",
     "Price Range": "$",
     "Neighborhood": "bronx ",
     "Style": "N",
@@ -637,7 +637,7 @@ const thriftStores = [
   },
   {
     "Store Name": "LePoint Value ",
-    "Address": "4268 White Plains rd",
+    "Address": "4268 White Plains rd New York, NY",
     "Price Range": "$",
     "Neighborhood": "bronx ",
     "Style": "N",
@@ -649,7 +649,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Flamingos vintage pound ",
-    "Address": "110 w 26th st                           ",
+    "Address": "110 w 26th st New York, NY",
     "Price Range": "$18/ pound",
     "Neighborhood": "Chelsea",
     "Style": "N",
@@ -661,7 +661,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Flamingos vintage pound ",
-    "Address": "4 st Marks Place     ",
+    "Address": "4 st Marks Place New York, NY",
     "Price Range": "$18/ pound",
     "Neighborhood": " East Village ",
     "Style": "N",
@@ -673,7 +673,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Unique Boutique ",
-    "Address": "487 Columbus Ave              ",
+    "Address": "487 Columbus Ave New York, NY",
     "Price Range": "$",
     "Neighborhood": "UWS",
     "Style": "N",
@@ -685,7 +685,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Unique Boutique ",
-    "Address": "1674 Thrift ave ",
+    "Address": "1674 Thrift ave New York, NY",
     "Price Range": "$",
     "Neighborhood": "UES",
     "Style": "N",
@@ -697,7 +697,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Housing Works ",
-    "Address": "2569 Broadway                ",
+    "Address": "2569 Broadway New York, NY",
     "Price Range": "$-$$",
     "Neighborhood": "UWS",
     "Style": "N",
@@ -709,7 +709,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Housing Works ",
-    "Address": "306 columbus ave ",
+    "Address": "306 columbus ave New York, NY",
     "Price Range": "$-$$",
     "Neighborhood": "UWS",
     "Style": "N",
@@ -721,7 +721,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Housing Works ",
-    "Address": "1730 second ave   ",
+    "Address": "1730 second ave New York, NY",
     "Price Range": "$-$$",
     "Neighborhood": " UES",
     "Style": "N",
@@ -733,7 +733,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Housing Works ",
-    "Address": "1222 2nd ave  ",
+    "Address": "1222 2nd ave New York, NY",
     "Price Range": "$-$$",
     "Neighborhood": "UES",
     "Style": "N",
@@ -745,7 +745,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Housing Works ",
-    "Address": "157 e 23rd st    ",
+    "Address": "157 e 23rd st New York, NY",
     "Price Range": "$-$$",
     "Neighborhood": " kips bay",
     "Style": "N",
@@ -757,7 +757,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Housing Works ",
-    "Address": "143 w 17th st   ",
+    "Address": "143 w 17th st New York, NY",
     "Price Range": "$-$$",
     "Neighborhood": "chelsea",
     "Style": "N",
@@ -769,7 +769,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Housing Works ",
-    "Address": "126 crosby st  ",
+    "Address": "126 crosby st New York, NY",
     "Price Range": "$-$$",
     "Neighborhood": "SoHo",
     "Style": "N",
@@ -781,7 +781,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Housing Works ",
-    "Address": "245 w 10th st ",
+    "Address": "245 w 10th st New York, NY",
     "Price Range": "$-$$",
     "Neighborhood": " West Village",
     "Style": "N",
@@ -793,7 +793,7 @@ const thriftStores = [
   },
   {
     "Store Name": "Housing Works ",
-    "Address": "150 Montague st ",
+    "Address": "150 Montague st New York, NY",
     "Price Range": "$-$$",
     "Neighborhood": "Brooklyn Heights ",
     "Style": "N",

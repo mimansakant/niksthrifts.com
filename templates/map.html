@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}NYC Thrifting Map{% endblock %}
+{% block title %}Nik’s Picks: The New York City Secondhand Guide{% endblock %}
 
 {% block head_extra %}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -39,11 +39,54 @@
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+
+  .info-section {
+    max-height: 150px; /* Limit the height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .info-section p {
+    margin-bottom: 1rem;
+  }
+
+  .info-section strong {
+    font-weight: 600;
+  }
+
+  .info-section em {
+    font-style: italic;
+  }
 </style>
 {% endblock %}
 
 {% block content %}
-<h1 style="text-align: center;">NYC Thrift Map</h1>
+<h1 style="text-align: center;">Nik’s Picks:</h1>
+<h2 style="text-align: center;">The New York City Secondhand Guide</h2>
+
+<!-- Scrollable Info Section -->
+<div class="info-section">
+  <p>Scroll to learn how to navigate the preferences and make the most out of your custom thrift map!</p>
+  <p><strong>Price Range:</strong><br>
+    New York City has endless secondhand spots to explore —from high-end vintage to low-cost gems. It’s no secret that prices in the city often come with an upcharge. Ultra inexpensive thrift stores do exist but they are rarer! Keep that in mind when selecting your price preference.
+  </p>
+  <p><strong>New or Inexperienced Thrifter?</strong><br>
+    Looking to shop more sustainably but not into the stereotypical dusty thrift stores? Select “yes” under preferences to be shown one-of-a-kind NYC vintage stores, high-end secondhand designer shops, and clean, organized, manageable thrift stores you’ll love!
+  </p>
+  <p><strong>Looking to sell clothes?</strong><br>
+    While donating clothes is easy and a great way to support circular fashion, selling your clothes is another awesome option—it keeps your pieces in use and puts a little extra cash in your pocket. Select “yes” under preferences to see stores that offer cash or credit for your clothes. Keep in mind that secondhand shops occasionally pause accepting items —be sure to call the store beforehand to confirm they’re accepting clothes!<br>
+    <em>Selling Tip:</em> It’s helpful to know the store’s style before selling! For example, if you’re looking to sell Y2K feminine pieces, choose a shop that matches that aesthetic for a better chance of selling.
+  </p>
+  <p><strong>On the hunt for a new designer item?</strong><br>
+    Looking for a secondhand designer piece? Whether you're trying to save money or shop more sustainably, select "yes" under preferences to discover standout stores offering everything from vintage designer bags to newer designs in excellent condition.
+  </p>
+</div>
 
 <div class="map-wrapper">
   <!-- Filters -->
@@ -64,56 +107,129 @@
     <label>Price Range:
       <select id="priceFilter">
         <option value="">All</option>
-        <option value="$">$</option>
+        <option value="$">$ (uncommon)</option>
         <option value="$$">$$</option>
         <option value="$$$">$$$</option>
         <option value="$$$$">$$$$</option>
       </select>
     </label>
 
-    <!-- Gender
-    <label>Gender Specific?
-      <select id="genderFilter">
+    <!-- Selling Clothes -->
+    <label>Selling Clothes:
+      <select id="sellingFilter">
         <option value="">All</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
+        <option value="Y">Yes</option>
+        <option value="N">No</option>
       </select>
-    </label> -->
+    </label>
 
-    <!-- Category -->
-    <label>Category:
-      <select id="categoryFilter">
+    <!-- Good for New Thrifters -->
+    <label>Good for New Thrifters:
+      <select id="newThriftersFilter">
         <option value="">All</option>
-        <option value="clothing and accessories">Clothing & Accessories</option>
-        <option value="books">Books</option>
+        <option value="Y">Yes</option>
+        <option value="N">No</option>
+      </select>
+    </label>
+
+
+    <!-- Items -->
+    <label>Items:
+      <select id="itemsFilter">
+        <option value="">All</option>
+        <option value="clothing">Clothing</option>
+        <option value="accessories">Accessories</option>
+        <option value="tchotchkes/knickknacks/homegoods">Tchotchkes/Knickknacks/Homegoods</option>
         <option value="furniture">Furniture</option>
       </select>
     </label>
 
-    <!-- Neighborhood -->
-    <label>Neighborhood:
-      <select id="neighborhoodFilter">
+    <!-- Designer Store -->
+    <label>Designer Store:
+      <select id="designerStoreFilter">
         <option value="">All</option>
-        <option value="UES">UES</option>
-        <option value="Bushwick">Bushwick</option>
-        <option value="East Village">East Village</option>
-        <!-- Add more neighborhoods from your data as needed -->
+        <option value="Y">Yes</option>
       </select>
     </label>
+    <button id="showStoresBtn" style="margin-top: 1rem;">Show Stores</button>
+
   </aside>
-
-  <!-- Map -->
-  <div id="map"></div>
-</div>
-
-
   <!-- Map -->
   <div id="map"></div>
 </div>
 {% endblock %}
 
 {% block body_extra %}
-<script src="{{ url_for('static', filename='js/thriftStores.js') }}"></script>
+<script src="{{ url_for('static', filename='js/thrift_stores_combined.js')}}"></script>
 <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+
+<!-- Email Modal -->
+<div id="emailModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
+  <div style="background:white; padding:2rem; border-radius:8px; width:300px; text-align:center;">
+    
+    <form 
+    id="emailForm"
+    action="https://formspree.io/f/mblkrlnz"
+    method="POST"
+    onsubmit="handleEmailSubmit(event)"
+  >
+
+    <h3>Enter Your Email</h3>
+    <p>Before viewing personalized thrift store results, please enter your email:</p>
+    <input type="email" id="emailInput" placeholder="you@example.com" style="width:100%; padding:0.5rem; margin-bottom:1rem;" required />
+    <br/>
+    <button id="submitEmailBtn">Submit</button>
+  </div>
+</div>
+
+<!-- Include JS files -->
+<script src="{{ url_for('static', filename='js/thrift_stores_combined.js')}}"></script>
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+
+<!-- Inline JS for modal logic (optional, or move to separate file) -->
+<script>
+  // Hide map initially
+  document.getElementById('map').style.display = 'none';
+
+  // Show modal when button is clicked
+  document.getElementById('showStoresBtn').addEventListener('click', () => {
+    document.getElementById('emailModal').style.display = 'flex';
+  });
+
+  // Custom handler to wait for Formspree submission before showing map
+  function handleEmailSubmit(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const form = document.getElementById('emailForm');
+    const email = document.getElementById('emailInput').value;
+
+    if (!email || !email.includes('@')) {
+      alert('Please enter a valid email.');
+      return;
+    }
+
+    // Submit the form using Fetch API
+    fetch(form.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    })
+    .then(response => {
+      if (response.ok) {
+        document.getElementById('emailModal').style.display = 'none';
+        document.getElementById('map').style.display = 'block';
+        updateMap(); // Show map and apply filters
+      } else {
+        alert("There was a problem submitting your email. Please try again.");
+      }
+    })
+    .catch(error => {
+      console.error("Formspree error:", error);
+      alert("Something went wrong. Please try again.");
+    });
+  }
+</script>
+
+
 {% endblock %}
 

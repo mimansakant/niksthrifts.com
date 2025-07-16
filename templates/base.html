@@ -37,7 +37,7 @@
         }
     
         .modal-body {
-            padding: 20px;
+            padding: 10px;
         }
     
         .modal-body .form-control {
@@ -112,13 +112,15 @@
             color: #fff; /* White text */
             padding: 2rem 1rem;
             margin-top: 4rem;
+            display: flex;
+            align-items: center; /* Vertically center the content */
         }
 
         .footer-container {
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
-            align-items: flex-start; /* Align logo and text at the top */
+            align-items: center; /* Vertically center the content */
             gap: 2rem;
             flex-wrap: wrap; /* Ensure responsiveness */
         }
@@ -189,7 +191,7 @@
                 <li><a class="{{ 'active' if page=='sustainability' else '' }}" href="{{ url_for('sustainability') }}">SUSTAINABILITY</a></li>
                 <li><a class="{{ 'active' if page=='map' else '' }}" href="{{ url_for('map_page') }}">MAP</a></li>
                 <li><a class="{{ 'active' if page=='events' else '' }}" href="{{ url_for('events') }}">EVENTS</a></li>
-                <li><a class="{{ 'active' if page=='memory' else '' }}" href="{{ url_for('memory') }}">MEMORY LANE</a></li>
+                <li><a class="{{ 'active' if page=='memory' else '' }}" href="{{ url_for('memory') }}">MLV</a></li>
             </ul>
         </div>
     </nav>
@@ -215,7 +217,7 @@
                 </div>
                 <div class="footer-column">
                     <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@niksthriftsnyc?is_from_webapp=1&sender_device=pc" target="_blank">@niksthriftsnyc</a></p>
-                    <p><strong>Depop:</strong> <a href="https://depop.com/memorylanevintagee" target="_blank">Memory Lane Vintage</a></p>
+                    <p><strong>Depop:</strong> <a href="https://depop.com/memorylanevintagee" target="_blank">MLV</a></p>
                 </div>
                 <div class="footer-column">
                     <p><strong>Location:</strong> New York, NY</p>    
